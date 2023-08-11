@@ -1,0 +1,164 @@
+---
+layout: coursepage
+title: CMU 15-441/641, Fall 2023 --- Home
+---
+
+<!-- ANNOUNCEMENTS: TEMPLATED --!>
+
+{% assign frontpage = site.announcements | reverse %}
+{% for announcement in frontpage limit:1%}
+<div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+<table>
+  <tr><td style="padding-right: 15px;">{{ announcement.date | date: "%a, %b %d" }}</td><td><strong>{{ announcement.title }}</strong></td></tr>
+  <tr><td></td><td>{{ announcement.text }}</td></tr>
+</table>
+</div>
+{% endfor %}
+
+<!-- COURSE OVERVIEW: NOT TEMPLATED -->
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Overview</h3>
+  </div>
+  <div class="panel-body">
+        <p>
+        15-441/641 is an introductory course in computer networks. The emphasis
+        will be on the basic performance and engineering tradeoffs in the
+        design and implementation of computer networks. To make the issues
+        more concrete, the class includes several multi-week projects
+        requiring significant design and implementation.
+        </p>
+
+        <p>
+        The goal is for students to learn not only what computer networks are
+        and how they work today, but also why they are designed the way they
+        are and how they are likely to evolve in the future. We will draw
+        examples primarily from the Internet. Topics to be covered include:
+        congestion/flow/error control, routing, addressing, naming,
+        multi-casting, switching, internetworking, and network
+        security. Evaluation is based on homework assignments, the projects,
+        one midterm exam, and one final exam.
+        </p>
+
+  </div></div>
+
+
+<div class="panel panel-default"> <div class="panel-heading"> <h3
+  class="panel-title">Prerequisites</h3> </div> <div
+  class="panel-body">
+<p> "Introduction to Computer Systems" is a
+  prerequisite for the course.  It is offered under the following
+  course numbers: 15-213, 18-213, and 15-513.  Graduate students must
+  get a B to satisfy the prerequisite.  Students who have taken the
+  prerequisite course at CMU get priority when we move students from
+  the waiting list.  </p>
+<p> Once students who meet the prerequisites
+  have been cleared, we will consider students with a strong systems
+  background. These decisions will be made in the first or second week
+  of the semester.  Do not send mail to the instructors about this
+  (e.g., explaining your background) - it will not help your case.
+  </p>
+</div> </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Course Staff</h3>
+  </div>
+  <div class="panel-body">
+      <h4>Instructors</h4>
+      <table class="table">
+      <tr><th>Name</th><th>Email</th><th>Office</th><th>Office Hours</th></tr>
+
+      <tr>
+        <td><a href="https://www.justinesherry.com/">Prof. Justine Sherry</a></td>
+        <td><span class="email">sherry AT cs.cmu.edu</span></td>
+        <td>GHC 9227</td>
+        <td><a href="https://calendar.google.com/calendar/selfsched?sstoken=UUZ3cmtRWkExS1pGfGRlZmF1bHR8Yjg5MTRmNjdmNzBmNjA4MjFiZGFkNWJmOTg4YjJjMzU">Sign-Up</a></td>
+      </tr>
+      </table>
+
+
+      <h4>Teaching Assistants</h4>
+      <table class="table">
+      <tr><th>Name</th><th>Email</th><th>Office</th><th>Office Hours</th></tr>
+
+      <tr>
+        <td><a href="https://hsadok.com/">Hugo Sadok</a></td>
+        <td><span class="email">sadok AT cmu.edu</span></td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.cs.cmu.edu/~natre/">Nirav Atre</a></td>
+        <td><span class="email">natre AT cs.cmu.edu</span></td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+ 
+      <tr>
+        <td><a href="TBD">Adithya Abraham Philip</a></td>
+        <td><span class="email">aphilip AT cmu.edu</span></td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+          
+      <tr>
+        <td><a href="TBD">Jacky He</a></td>
+        <td><span class="email">junchenh AT andrew.cmu.edu</span></td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+          
+      <tr>
+        <td><a href="TBD">Chloe Wang</a></td>
+        <td><span class="email">chloewang AT cmu.edu</span></td>
+        <td>TBD</td>
+        <td>TBD</td>
+      </tr>
+                   
+      </table>
+
+      Office hour locations may subject to changes. Please check back on the <a href="calendar.html">course calendar</a> to see the latest updates on the office hours. 
+      You can also find the floor plans of GHC at <a href="https://www.cmu.edu/finance/property-space/floorplan-room/acad-admin/GHC/index.html">here</a> (CMU login required).
+
+      <h4>Course Administrator</h4>
+      <table class="table">
+      <tr><th>Name</th><th>Email</th><th>Office</th></tr>
+
+      <tr>
+        <td><a href="https://csd.cmu.edu/people/staff/emily-spencer">Emily Spencer</a></td>
+        <td><span class="email">emilyspe AT andrew.cmu.edu</span></td>
+        <td>GHC 9229</td>
+      </tr>
+      </table>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Resources</h3>
+  </div>
+  <div class="panel-body">
+        <ul>
+        <li><b><a href="https://edstem.org/us/courses/42182/">Ed</a></b>: <br />
+        If you have a question about a project handout or a technical
+        issue, there is an excellent chance that other students have
+        the same question.  Please read the posts on Ed to see if there
+        has been traffic, and consider posting your questions there.
+        <a href="https://edstem.org/us/join/jhUK2Z">Create an account using your .cmu.edu email.</a>
+        </li>
+                
+        <li><b><a href="https://www.gradescope.com/courses/564665">Gradescope</a></b>: <br />
+        Submit all homeworks and projects, as well as associated regrade requests, through Gradescope.</li>
+
+        <li><b>Staff mailing list:</b> <span class="email">staff-441 AT cs.cmu.edu</span><br />
+        If you have a question that you believe is particular to your circumstances
+        and should not be posted in a public forum, then send mail to the staff list,
+        which reaches the instructors and TAs.  If your question involves a
+        confidential personal or academic-conduct issue, then you should probably
+        contact the instructor in person or send mail.</li>
+        </ul>
+  </div>
+</div>
